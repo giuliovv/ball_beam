@@ -12,22 +12,22 @@ extern "C" {
 #define casadi_int int_T
 #endif
 
-int M(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem);
-int M_alloc_mem(void);
-int M_init_mem(int mem);
-void M_free_mem(int mem);
-int M_checkout(void);
-void M_release(int mem);
-void M_incref(void);
-void M_decref(void);
-casadi_int M_n_out(void);
-casadi_int M_n_in(void);
-casadi_real M_default_in(casadi_int i);
-const char* M_name_in(casadi_int i);
-const char* M_name_out(casadi_int i);
-const casadi_int* M_sparsity_in(casadi_int i);
-const casadi_int* M_sparsity_out(casadi_int i);
-int M_work(casadi_int *sz_arg, casadi_int* sz_res, casadi_int *sz_iw, casadi_int *sz_w);
+int f(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem);
+int f_alloc_mem(void);
+int f_init_mem(int mem);
+void f_free_mem(int mem);
+int f_checkout(void);
+void f_release(int mem);
+void f_incref(void);
+void f_decref(void);
+casadi_int f_n_out(void);
+casadi_int f_n_in(void);
+casadi_real f_default_in(casadi_int i);
+const char* f_name_in(casadi_int i);
+const char* f_name_out(casadi_int i);
+const casadi_int* f_sparsity_in(casadi_int i);
+const casadi_int* f_sparsity_out(casadi_int i);
+int f_work(casadi_int *sz_arg, casadi_int* sz_res, casadi_int *sz_iw, casadi_int *sz_w);
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
