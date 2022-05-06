@@ -10,11 +10,11 @@ extern "C" {
   #define _CASADI_NAMESPACE_CONCAT(NS, ID) NS ## ID
   #define CASADI_PREFIX(ID) CASADI_NAMESPACE_CONCAT(CODEGEN_PREFIX, ID)
 #else
-  #define CASADI_PREFIX(ID) mpc_casadi_ ## ID
+  #define CASADI_PREFIX(ID) f_ ## ID
 #endif
 
 #include <math.h>
-#include <mpc_casadi.h>
+#include <simstruc.h>
 #include <stdarg.h>
 #include <stdio.h>
 
