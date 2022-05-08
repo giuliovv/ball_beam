@@ -498,7 +498,7 @@ casadi_real casadi_bilin(const casadi_real* A, const casadi_int* sp_A, const cas
 #endif
 
 #ifndef casadi_real_min
-  #define casadi_real_min <NOT SPECIFIED>
+  #define casadi_real_min 0.0000001
 #endif
 
 struct casadi_qp_prob {
